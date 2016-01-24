@@ -432,10 +432,10 @@
    `(org-column ((,class (:background ,current-line))))
    `(org-column-title ((,class (:inherit org-column :weight bold :underline t))))
    `(org-date ((,class (:foreground ,"#80cbc4" :underline t))))
-   `(org-document-info ((,class (:foreground ,aqua :height 1.35))))
-   `(org-document-info-keyword ((,class (:foreground ,green :height 1.35))))
-   `(org-document-title ((,class (:weight bold :foreground ,foreground :height 1.35))))
-   `(org-done ((,class (:foreground ,green :bold t :background,"#1b5e20"))))
+   `(org-document-info ((,class (:foreground ,aqua))))
+   `(org-document-info-keyword ((,class (:foreground ,green))))
+   `(org-document-title ((,class (:foreground ,foreground))))
+   `(org-done ((,class (:foreground ,green :bold t ))))
    `(org-ellipsis ((,class (:foreground ,comment))))
    `(org-footnote ((,class (:foreground ,aqua))))
    `(org-formula ((,class (:foreground ,red))))
@@ -444,9 +444,9 @@
    `(org-scheduled ((,class (:foreground ,green))))
    `(org-scheduled-previously ((,class (:foreground ,orange))))
    `(org-scheduled-today ((,class (:foreground ,green))))
-   `(org-special-keyword ((,class (:foreground ,comment))))
+   `(org-special-keyword ((,class (:foreground ,comment :weight bold))))
    `(org-table ((,class (:foreground ,"#e3f2fd" :background ,far-background))))
-   `(org-todo ((,class (:foreground ,"#ffab91" :bold t :background ,"#dd2c00"))))
+   `(org-todo ((,class (:foreground ,red :bold t))))
    `(org-upcoming-deadline ((,class (:foreground ,orange))))
    `(org-warning ((,class (:weight bold :foreground ,red))))
    `(org-block-begin-line ((,class (:foreground ,"#b3e5fc" :background "#1e2930" :underline ,"#e1f5fe"))))
@@ -455,16 +455,13 @@
                                    :box (:line-width 1 :color nil :style pressed-button)))))
 
    `(org-level-1 ((,class (:inherit outline-1
-                         :overline ,"#b0bec5"
-                         :background ,header-color
-                         :weight bold
-                         :height 1.3))))
+				    :weight bold
+				    :foreground ,blue
+				    ))))
    `(org-level-2 ((,class (:inherit outline-2
-                                  :background ,"#35575b"
-                                  :overline ,"#65757e"
-                         :height 1.2))))
-   `(org-level-3 ((,class (:inherit outline-3 :height 1.1))))
-   `(org-level-4 ((,class (:inherit outline-4 :height 1.0))))
+				    :foreground ,aqua))))
+   `(org-level-3 ((,class (:inherit outline-3 :foreground ,yellow))))
+   `(org-level-4 ((,class (:inherit outline-4 :foreground ,orange))))
    `(org-level-5 ((,class (:inherit outline-5 ))))
    `(org-level-6 ((,class (:inherit outline-6 ))))
    `(org-level-7 ((,class (:inherit outline-7 ))))
