@@ -764,6 +764,10 @@
    `(twittering-timeline-header-face ((,class (:foreground ,green :weight bold))))
    `(twittering-timeline-footer-face ((,class (:inherit twittering-timeline-header-face))))
 
+   ;; window-number
+   `(window-number-face ((,class (:inherit mode-line-mode-menu
+				  :foreground ,green))))
+
    `(custom-variable-tag ((,class (:foreground ,blue))))
    `(custom-group-tag ((,class (:foreground ,blue))))
    `(custom-state ((,class (:foreground ,green))))
