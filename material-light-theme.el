@@ -436,11 +436,11 @@
    `(org-code ((,class (:foreground ,foreground :background ,"#EFEBE9"))))
    `(org-column ((,class (:background ,current-line))))
    `(org-column-title ((,class (:inherit org-column :weight bold :underline t))))
-   `(org-date ((,class (:foreground ,"#80cbc4" :underline t))))
-   `(org-document-info ((,class (:foreground ,aqua :height 1.35))))
-   `(org-document-info-keyword ((,class (:foreground ,green :height 1.35))))
-   `(org-document-title ((,class (:weight bold :foreground ,foreground :height 1.35))))
-   `(org-done ((,class (:background ,"#c8e6c9" :bold t :foreground,"#2e7d32"))))
+   `(org-date ((,class (:foreground ,green :underline t))))
+   `(org-document-info ((,class (:foreground ,aqua ))))
+   `(org-document-info-keyword ((,class (:foreground ,green ))))
+   `(org-document-title ((,class (:weight bold :foreground ,foreground ))))
+   `(org-done ((,class (:bold t :foreground,"#2e7d32"))))
    `(org-ellipsis ((,class (:foreground ,comment))))
    `(org-footnote ((,class (:foreground ,aqua))))
    `(org-formula ((,class (:foreground ,red))))
@@ -451,7 +451,7 @@
    `(org-scheduled-today ((,class (:foreground ,green))))
    `(org-special-keyword ((,class (:foreground ,comment))))
    `(org-table ((,class (:foreground ,"#1565c0" :background ,"#e0f7fa"))))
-   `(org-todo ((,class (:background ,"#ffcdd2" :bold t :foreground ,"#c62828"))))
+   `(org-todo ((,class (:bold t :foreground ,"#c62828"))))
    `(org-upcoming-deadline ((,class (:foreground ,orange))))
    `(org-warning ((,class (:weight bold :foreground ,red))))
    `(org-block-begin-line ((,class (:foreground ,"#4e342e" :background "#efebe9" :underline ,"#a1887f"))))
@@ -459,17 +459,10 @@
    `(org-kbd ((,class (:background ,inactive-gray :foreground ,foreground
                                    :box (:line-width 1 :color nil :style pressed-button)))))
 
-   `(org-level-1 ((,class (:inherit outline-1
-                         :overline ,"#b0bec5"
-                         :background ,inactive-gray
-                         :weight bold
-                         :height 1.3))))
-   `(org-level-2 ((,class (:inherit outline-2
-                                  :background ,"#C8E6C9"
-                                  :overline ,"#E8F5E9"
-                         :height 1.2))))
-   `(org-level-3 ((,class (:inherit outline-3  :height 1.1))))
-   `(org-level-4 ((,class (:inherit outline-4  :height 1.0))))
+   `(org-level-1 ((,class (:inherit outline-1 :foreground ,blue))))
+   `(org-level-2 ((,class (:inherit outline-2 :foreground ,aqua))))
+   `(org-level-3 ((,class (:inherit outline-3 :foreground ,yellow))))
+   `(org-level-4 ((,class (:inherit outline-4 :foreground ,orange))))
    `(org-level-5 ((,class (:inherit outline-5 ))))
    `(org-level-6 ((,class (:inherit outline-6 ))))
    `(org-level-7 ((,class (:inherit outline-7 ))))
@@ -772,6 +765,9 @@
    `(twittering-uri-face ((,class (:foreground ,blue :inherit link))))
    `(twittering-timeline-header-face ((,class (:foreground ,green :weight bold))))
    `(twittering-timeline-footer-face ((,class (:inherit twittering-timeline-header-face))))
+
+   ;; window number mode
+   `(window-number-face ((,class (:inherit mode-line-mode-menu :foreground ,aqua))))
 
    `(custom-variable-tag ((,class (:foreground ,blue))))
    `(custom-group-tag ((,class (:foreground ,blue))))
