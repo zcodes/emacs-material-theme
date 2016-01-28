@@ -767,7 +767,7 @@
    `(twittering-timeline-footer-face ((,class (:inherit twittering-timeline-header-face))))
 
    ;; window number mode
-   `(window-number-face ((,class (:inherit mode-line-mode-menu :foreground ,aqua))))
+   `(window-number-face ((,class (:inherit mode-line-emphasis :foreground ,aqua))))
 
    `(custom-variable-tag ((,class (:foreground ,blue))))
    `(custom-group-tag ((,class (:foreground ,blue))))
