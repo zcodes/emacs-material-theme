@@ -54,7 +54,7 @@
        (inactive-gray (if window-system "#cfd8dc" "#cfd8dc"))
        (header-color (if window-system "#C8E6C9" "#C8E6C9"))
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
-       (selection "#90A4AE") ;; tab-control-dirty-tab-close-button
+       (selection "#b0bec5") ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
        (foreground "#212121")
        (comment "#607d8b") ;; table-row
